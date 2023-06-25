@@ -8,11 +8,11 @@ import javax.persistence.*;
 @Table(name = "T_STOP")
 @Data
 public class StopBE {
-    @Id
     @Column(name = "id")
     @SequenceGenerator(name = "stop_gen", sequenceName = "S_STOP_ID")
     @GeneratedValue(generator = "stop_gen", strategy = GenerationType.SEQUENCE)
     public Long id;
+    @Id
     @Column(name = "STOP_ID")
     public String stopId;
     @Column(name = "STOP_STATION")
